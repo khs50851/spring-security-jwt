@@ -61,7 +61,7 @@ public class IndexController {
 		System.out.println("principalDetails : "+principalDetails.getUser());
 		
 		System.out.println("principalDetails : "+principalDetails.getAttribute("sub"));
-		System.out.println("principalDetails : "+principalDetails.getAttribute("name"));
+		System.out.println("principalDetails : "+principalDetails.getAttributes().get("response"));
 		System.out.println("principalDetails : "+principalDetails.getAttributes());
 		return "user";
 	}
